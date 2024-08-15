@@ -10,7 +10,6 @@ export enum Category {
 @Schema({
   timestamps: true,
 })
-
 export class Book {
   @Prop()
   title: string;
@@ -22,7 +21,7 @@ export class Book {
   author: string;
 
   @Prop()
-  price: string;
+  price: number;
 
   @Prop()
   category: Category;
