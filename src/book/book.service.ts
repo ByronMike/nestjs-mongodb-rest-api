@@ -16,6 +16,15 @@ export class BookService {
     return books;
   }
 
+  async findById(id: string): Promise<Book> {
+    const book = await this.bookModel.findById(id);
+
+    if (!book) {
+      throw new NotFoundException('Book not found');
+    }
+    return book;
+  }
+
   async create(book: Book): Promise<Book> {
     const res = await this.bookModel.create(book);
     return res;
