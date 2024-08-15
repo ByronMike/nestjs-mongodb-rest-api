@@ -29,4 +29,11 @@ export class BookService {
     const res = await this.bookModel.create(book);
     return res;
   }
+
+  async updateById(id: string, book: Book): Promise<Book> {
+    return await this.bookModel.findByIdAndUpdate(id, book, {
+      new: true,
+      runValidators: true,
+    });
+  }
 }
