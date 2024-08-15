@@ -30,6 +30,12 @@
 
 ```bash
 $ pnpm install
+
+# install mngoose ODM and related dependencies for nest.js
+$ pnpm i mongoose @nestjs/mongoose 
+
+# provide a configuration module for NestJS to maanage and access environment variables and configuration settings
+$ pnpm i @nestjs/config 
 ```
 
 ## Running the app
