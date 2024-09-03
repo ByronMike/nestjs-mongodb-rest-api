@@ -36,7 +36,12 @@ $ pnpm i mongoose @nestjs/mongoose
 
 # provide a configuration module for NestJS to maanage and access environment variables and configuration settings
 $ pnpm i @nestjs/config 
+
+# install the last working node version and use it
+$ nvm install && nvm use
 ```
+
+
 
 ## Running the app
 
